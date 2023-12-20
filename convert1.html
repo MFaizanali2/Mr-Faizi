@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function run() {
+        var miles = document.getElementById("give_value").value;
+
+        var km = 1.60934;
+        var meter = 1609.34;
+        var cm = 160934;
+        var foot = 5280;
+        var inch = 63360;
+
+
+        var result_km = miles*km;
+        var result_meter = miles*meter;
+        var result_cm = miles*cm;
+        var result_foot = miles*foot;
+        var result_inch = miles*inch;
+        
+
+        document.getElementById("get_km").innerHTML = result_km;
+        document.getElementById("get_meter").innerHTML = result_meter;
+        document.getElementById("get_cm").innerHTML = result_cm;
+        document.getElementById("get_foot").innerHTML = result_foot;
+        document.getElementById("get_inch").innerHTML = result_inch;
+
+
+        
+        document.getElementById("get_miles1").innerHTML = miles;
+        document.getElementById("get_miles2").innerHTML = miles;
+        document.getElementById("get_miles3").innerHTML = miles;
+        document.getElementById("get_miles4").innerHTML = miles;
+        document.getElementById("get_miles5").innerHTML = miles;
+        
+
+
+    }
+    </script>
+                        <!-- <svg viewbox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
+                        focusable="false"> <g> <path d="M21,6H3V5h18V6z"</g></svg> -->
+
+</head>
+<body>
+    <p> Give Miles Value <input type="text" id="give_value"> </p>
+    <p> <input type="button" value="convert" onclick="run()"> </p>
+    <h3> <span id="get_miles1">0</span> Miles Equal to <span id="get_km"> 0</span> km</h3>
+    <h3> <span id="get_miles2">0</span> Miles Equal to <span id="get_meter"> 0</span> meter</h3>
+    <h3> <span id="get_miles3">0</span> Miles Equal to <span id="get_cm"> 0</span> cm</h3>
+    <h3> <span id="get_miles4">0</span> Miles Equal to <span id="get_foot"> 0</span> foot</h3>
+    <h3> <span id="get_miles5">0</span> Miles Equal to <span id="get_inch"> 0</span> inch</h3>
+</body>
+</html>
